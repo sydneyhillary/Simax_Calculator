@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 clearScreen();
                 processor = displayText.getText().toString();
-                displayText.setText(processor + "x");
+                displayText.setText(processor + "*");
             }
         });
 
@@ -255,8 +255,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 clearScreen();
                 processor = displayText.getText().toString();
-
-                processor = processor.replaceAll("X", "*");
 
 
                 Context rhino = Context.enter();
